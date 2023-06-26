@@ -19,3 +19,4 @@ describe('Pregunta2Component', () => {
     expect(component).toBeTruthy();
   });
 });
+
