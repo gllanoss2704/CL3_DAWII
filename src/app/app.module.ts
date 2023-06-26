@@ -5,24 +5,23 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Pregunta1Component } from './pregunta1/pregunta1.component';
 import { Pregunta2Component } from './pregunta2/pregunta2.component';
-import { Pregunta3Component } from './pregunta3/pregunta3.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './angular-material/material.module';
+
 
 const routes: Routes = [
   { path: 'pregunta1', component: Pregunta1Component },
   { path: 'pregunta2', component: Pregunta2Component },
-  { path: 'pregunta3', component: Pregunta3Component },
-  // Agrega más rutas según tus necesidades
+
+  
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    
     Pregunta1Component,
-    Pregunta2Component,
-    Pregunta3Component
+    Pregunta2Component
+   
     
   ],
   imports: [
