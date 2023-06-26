@@ -8,6 +8,11 @@ export interface PeriodicElement {
   symbol: string;
 }
 
+interface Food {
+  value: string;
+  viewValue: string;
+}
+
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -30,6 +35,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 
 export class Pregunta2Component {
+  foods: Food[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
+  ];
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }
